@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jump1.ogg-8c2f1aafa3be7d5caf74b486f5a5473e.oggstr"
+
+[deps]
+
+source_file="res://TheDND_resources/SFX/jump1.ogg"
+dest_files=[ "res://.import/jump1.ogg-8c2f1aafa3be7d5caf74b486f5a5473e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

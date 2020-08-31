@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/coin_SFX.wav-d4dd179b8fcc1b117127b601870baad6.sample"
+
+[deps]
+
+source_file="res://TheDND_resources/SFX/coin_SFX.wav"
+dest_files=[ "res://.import/coin_SFX.wav-d4dd179b8fcc1b117127b601870baad6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

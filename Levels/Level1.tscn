@@ -1,0 +1,99 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Tilesset.tres" type="TileSet" id=2]
+[ext_resource path="res://Hazards/SpikeTop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TheDND_resources/SFX/Summer_Park.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Items/Portal.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://NPCs/SpikeMan.tscn" type="PackedScene" id=7]
+
+[node name="Level1" type="Node2D" groups=[
+"GameState",
+]]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 523.251, 273.518 )
+
+[node name="Hazards" type="Node" parent="."]
+
+[node name="SpikeTop" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 1160.27, 697.278 )
+
+[node name="SpikeTop2" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 3418.89, 759.869 )
+
+[node name="SpikeTop3" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 3686.55, -904.828 )
+
+[node name="SpikeTop5" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 2440.85, 1016.34 )
+
+[node name="SpikeTop4" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 3782.65, -905.121 )
+
+[node name="SpikeTop7" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 4709.86, 758.055 )
+
+[node name="SpikeTop8" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 4619.35, 758.348 )
+
+[node name="SpikeTop10" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 5647.03, 118.827 )
+
+[node name="SpikeTop14" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 5738.03, 118.827 )
+
+[node name="SpikeTop11" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6987.3, 630.533 )
+
+[node name="SpikeTop12" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 8269.29, 501.839 )
+
+[node name="SpikeTop13" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 9411.37, -137.229 )
+
+[node name="SpikeTop15" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 6534.68, 1207.91 )
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[node name="GUI" parent="." instance=ExtResource( 6 )]
+
+[node name="NPCs" type="Node" parent="."]
+
+[node name="SpikeMan" parent="NPCs" instance=ExtResource( 7 )]
+position = Vector2( 1563.7, -188.474 )
+
+[node name="SpikeMan2" parent="NPCs" instance=ExtResource( 7 )]
+position = Vector2( 4089.21, 195.608 )
+
+[node name="SpikeMan3" parent="NPCs" instance=ExtResource( 7 )]
+position = Vector2( 812.981, 1031.56 )
+
+[node name="SpikeMan4" parent="NPCs" instance=ExtResource( 7 )]
+position = Vector2( 4526.53, -956.882 )
+
+[node name="SpikeMan5" parent="NPCs" instance=ExtResource( 7 )]
+position = Vector2( 3173.84, 1219.43 )
+
+[node name="SpikeMan6" parent="NPCs" instance=ExtResource( 7 )]
+position = Vector2( 3046.58, -700.686 )
+
+[node name="SpikeMan7" parent="NPCs" instance=ExtResource( 7 )]
+position = Vector2( 6566.5, -317.378 )
+
+[node name="SpikeMan8" parent="NPCs" instance=ExtResource( 7 )]
+position = Vector2( 8422.04, 451.922 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 523.251, 273.518 )
+tile_set = ExtResource( 2 )
+collision_layer = 2
+format = 1
+tile_data = PoolIntArray( -1179602, 6, 0, -1179589, 6, 0, -917468, 6, 0, -720829, 5, 0, -589830, 0, 0, -655252, 1, 0, -524197, 2, 0, -458724, 0, 0, -393203, 4, 0, -393082, 2, 0, -262162, 0, 0, -130993, 2, 0, 52, 4, 0, 196591, 0, 0, 131109, 5, 0, 196630, 1, 0, 327678, 0, 0, 262216, 1, 0, 262264, 4, 0, 393316, 1, 0, 458761, 0, 0, 524331, 5, 0, 524351, 6, 0, 524430, 3, 0, 589907, 3, 0, 589953, 0, 0, 720883, 0, 0, 655475, 1, 0, 786461, 1, 0, 851969, 0, 0, 983133, 3, 0, 1048614, 2, 0, 1048630, 5, 0, 1048649, 3, 0, 1179641, 0, 0, 1376406, 2, 0 )
+
+[node name="Portal" parent="." instance=ExtResource( 5 )]
+position = Vector2( 10296.1, 1259.39 )

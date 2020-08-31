@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pain.ogg-e3488956281c7a9a96c6381677b88875.oggstr"
+
+[deps]
+
+source_file="res://TheDND_resources/SFX/pain.ogg"
+dest_files=[ "res://.import/pain.ogg-e3488956281c7a9a96c6381677b88875.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
